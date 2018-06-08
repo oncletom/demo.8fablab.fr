@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="{{ site.baseurl }}" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="{{ site.description }}" />
+  <title>{{ page.title }} • {{ site.title }}</title>
+</head>
+<body>
+
+<h1>
+  <a href="{{ site.url | relative_url}}">{{ site.title }}</a>
+</h1>
+
+<nav>
+  <!-- site.pages -->
+  <ul>
+    <li><a href="#">8 FabLab</a></li>
+    <li><a href="#">8 Coworking</a></li>
+    <li><a href="#">8 Pro</a></li>
+    <li><a href="#">Infos Pratiques</a></li>
+  </ul>
+</nav>
+
+<main>{{ content }}</main>
+
+</body>
+</html>

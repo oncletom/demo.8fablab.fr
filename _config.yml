@@ -1,0 +1,9 @@
+title: 8 FabLab et Coworking
+email: contact@http://8fablab.fr/
+description: >-
+  8fablab, un lieu de recherche et de fabrication autour des outils à commande numérique dans la drôme
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+plugins:
+  - jekyll-feed
