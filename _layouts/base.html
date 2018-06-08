@@ -6,6 +6,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="description" content="{{ site.description }}" />
   <title>{{ page.title }} • {{ site.title }}</title>
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
@@ -16,11 +17,14 @@
 <nav>
   <!-- site.pages -->
   <ul>
-    <li><a href="#">8 FabLab</a></li>
-    <li><a href="#">8 Coworking</a></li>
-    <li><a href="#">8 Pro</a></li>
-    <li><a href="#">Infos Pratiques</a></li>
+    {% for post in site.pages %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
   </ul>
+
+  <!-- This loops through the paginated posts -->
+
+
 </nav>
 
 <main>{{ content }}</main>
